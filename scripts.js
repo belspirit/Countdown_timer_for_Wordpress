@@ -37,10 +37,10 @@ function countdown(){
     // If the count down is over, write some text
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("countdown").innerHTML = "<h3>Акция завершена!</h3>";
+        document.getElementById("countdown").innerHTML = "<h3 style="text-align:center;width:100%">Акция завершена!</h3>";
     }
     
 }
 
 // Update the count down every 1 second
-setInterval(countdown, 1000);
+var x = setInterval(countdown, 1000);
